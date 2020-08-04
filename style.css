@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#grad1 {
+  background-color: linear-gradient(
+    rgb(96, 96, 236),
+    white
+  ); /* For browsers that do not support gradients */
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.team {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

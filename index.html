@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>tropicRPC</title>
+  </head>
+
+  <body id="grad1">
+    <div>
+      <img class="icon" src="./images/icon.png" />
+      <a href="https://github.com/oslabs-beta/tropicRPC"
+        ><img class="icon" src="./images/githubicon.png"
+      /></a>
+    </div>
+
+    <hr />
+    <div>
+      <img src="./images/logo.png" />
+      <h3>
+        A Visual Studio Code extension that provides gRPC Remote Procedure Call (gRPC) API endpoint
+        testing.
+      </h3>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>Getting Started</h2>
+
+      <div>
+        <h4>Installation</h4>
+        <p>tropicRPC can be installed from the VS Code Extensions Marketplace here.</p>
+      </div>
+
+      <div>
+        <span>
+          <h4>Setting up the config file</h4>
+          <p>
+            Open the command palette in VS Code (Cmd/Ctrl + Shift + P) and select
+            <code>tropicRPC: Create Config File</code>. A default config file will be generated.
+            Follow the instructions in the config object to update the entry, portNumber, ipAddress,
+            protoFile, and protoPackage.
+          </p>
+        </span>
+        <span
+          ><img
+            src="https://raw.githubusercontent.com/oslabs-beta/tropicRPC/master/DOCUMENTATION/images/update_config.gif"
+        /></span>
+      </div>
+
+      <div>
+        <h4>tropicRPC's mock API</h4>
+        <p>
+          A mock gRPC API was built for testing tropicRPC during development. This mock API is
+          open-sourced for users to test the tropicRPC extension. It's available in this
+          <a href="https://github.com/tropicRPC/Mock-gRPC-API">GitHub repository.</a>
+        </p>
+      </div>
+
+      <div>
+        <span>
+          <h4>Write Your First tropicRPC gRPC Request</h4>
+          <ol>
+            <li>
+              Search for tropicRPC using the VS Code Command Palette (Cmd/Ctrl + Shift + P) and run
+              the <code>tropicRPC: Activate</code> command.
+            </li>
+            <li>
+              In the 'request' object, set the values of the 'service', 'method', and 'message'
+              properties appropriately.
+            </li>
+            <li>
+              On every config file save, tropicRPC will send the request(s) and display your server
+              results in the output channel.
+              <ul>
+                <li>
+                  For unary and server-streaming RPCs, add fields as properties on request object
+                </li>
+                <li>
+                  For client-streaming and bidirectional RPCs, add each stream as an object nested
+                  under the request object
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </span>
+        <span
+          ><img
+            src="https://raw.githubusercontent.com/oslabs-beta/tropicRPC/master/DOCUMENTATION/images/add_request.gif"
+        /></span>
+      </div>
+
+      <div>
+        <h4>Ending Your tropicRPC Session</h4>
+        <p>
+          When you are ready to end your session, search for tropicRPC using the VS Code Command
+          Palette (Cmd/Ctrl + Shift + P) and run the <code>tropicRPC: Deactivate</code> command.
+          Deactivating the extension will stop your server.
+        </p>
+      </div>
+
+      <div>
+        <h4>Troubleshooting: Changing Your Server Path</h4>
+        <p>
+          After initially setting your server path, any additional updates to the path will require
+          the extension to be deactivated and then reactivated for changes to take effect.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>Features</h2>
+      <div>
+        <div><h4>Unary RPC</h4></div>
+        <div></div>
+      </div>
+      <div>
+        <div><h4>Server Streaming RPC</h4></div>
+        <div></div>
+      </div>
+      <div>
+        <div><h4>Client Streaming RPC</h4></div>
+        <div></div>
+      </div>
+      <div>
+        <div><h4>Bidirectional Streaming RPC</h4></div>
+        <div></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>Teams</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/edkchow"
+            ><img
+              class="team"
+              src="https://avatars0.githubusercontent.com/u/60953333?s=460&u=37050957f35a5e77562c940633d55b630fa64c1c&v=4"
+            />Ed Chow</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/joycelo"
+            ><img
+              class="team"
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQE01IdbPA-_PQ/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=kmrUGNS4vrXyQciM4RZDqPP3Zo6prwgg5X-x564xU-0"
+            />Joyce Lo</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/rosedamasco"
+            ><img
+              class="team"
+              src="https://avatars0.githubusercontent.com/u/63080999?s=460&u=38fc47c17f34c56d02714f94b2abe3d9c517a8fb&v=4"
+            />Roseanne Damasco</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/ShahruKhanHub"
+            ><img
+              class="team"
+              src="https://media-exp1.licdn.com/dms/image/C5603AQFAkbSMLjY17g/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=K9E5h1hzvFILXJJOrlO6yP7-qLwpWcByTl5UiymElaE"
+            />Shahrukh Khan</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/stevencanavan"
+            ><img
+              class="team"
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQFdHqHfThd1pA/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=5jugwscOevlIrdKucIOaXhNB_hNo3-NziEWZJqYuOfw"
+            />Steve Canavan</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <div>This project is licensed under the MIT License</div>
+      <div>tropicRPC is an open source project.</div>
+      <div>
+        <a
+          class="github-button"
+          href="https://github.com/oslabs-beta/tropicRPC"
+          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star oslabs-beta/tropicRPC on GitHub"
+          >Star</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
