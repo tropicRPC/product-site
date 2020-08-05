@@ -1,19 +1,158 @@
-/* html,
+html,
 body {
   margin: 0px;
   padding: 0px;
-} */
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
 
-#grad1 {
-  background-color: linear-gradient(
-    rgb(96, 96, 236),
-    white
-  ); /* For browsers that do not support gradients */
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 40px;
+}
+
+#header-container > * {
+  align-self: center;
+  text-align: center;
+  font-family: 'Product Sans';
+  font-weight: 1;
+  font-size: 1.2em;
 }
 
 .icon {
-  width: 250px;
-  height: 250px;
+  /* width: 50px; */
+  height: 50px;
+  margin: 20px;
+}
+
+#main-logo {
+  align-items: center;
+}
+
+.getting-started {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.getting-started p {
+  font-family: 'Product Sans';
+}
+
+.getting-started > * {
+  padding: 20px;
+}
+
+.installation {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.installation > * {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.setting-up {
+  display: flex;
+  align-items: center;
+}
+
+.setting-up > span:first-child {
+  order: 2;
+}
+
+.setting-up > * {
+  flex: 1;
+  font-size: 1.3em;
+}
+
+.mock {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mock > * {
+  flex: 1;
+  font-size: 1.3em;
+}
+
+.request {
+  display: flex;
+  align-items: center;
+}
+
+.request > * {
+  flex: 1;
+  text-align: left;
+  font-family: 'Product Sans';
+}
+
+/* img[src='./images/request-object-square.gif'] {} */
+
+.end {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.end > :first-child {
+  order: 2;
+}
+
+.end > * {
+  flex: 1;
+}
+
+.troubleshoot {
+  display: flex;
+}
+
+.troubleshoot > * {
+  flex: 1;
+}
+
+h2,
+h4 {
+  font-family: 'gotham';
+  font-weight: 1;
+}
+
+.streaming-odd,
+.streaming-even {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.streaming-odd {
+  background: rgb(255, 251, 253);
+  background: radial-gradient(
+    circle,
+    rgba(255, 251, 253, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+/* 
+.streaming-even {
+} */
+
+.streaming-text {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.RPC-type-img {
+  width: 25%;
+  height: 25%;
 }
 
 .team {
