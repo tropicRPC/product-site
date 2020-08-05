@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>tropicRPC</title>
@@ -10,83 +18,89 @@
 
   <body>
     <div id="nav">
-      <img class="icon" src="./images/icon.png" />
+      <img class="icon-logo" src="./images/icon.png" />
       <ul>
-        <li class="nav"><a href="#">Home</a></li>
-        <li class="nav"><a href="#getting-started">Getting Started</a></li>
-        <li class="nav"><a href="#mock-api">Mock gRPC API</a></li>
-        <li class="nav"><a href="#features">Features</a></li>
-        <li class="nav"><a href="#team">Team</a></li>
+        <li class="nav"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav">
+          <a href="#getting-started" class="nav-link">Getting Started</a>
+        </li>
+        <li class="nav">
+          <a href="#mock-api" class="nav-link">Mock gRPC API</a>
+        </li>
+        <li class="nav"><a href="#features" class="nav-link">Features</a></li>
+        <li class="nav"><a href="#team" class="nav-link">Team</a></li>
       </ul>
       <a href="https://github.com/oslabs-beta/tropicRPC"
         ><img class="icon" src="./images/githubicon.png"
       /></a>
     </div>
 
-    <div id="header-container" class="container shadow">
-      <img src="./images/logo.png" />
-      <h3>
-        A Visual Studio Code extension that provides gRPC Remote Procedure Call (gRPC) API endpoint
-        testing.
-      </h3>
+    <div id="header-container">
+      <div id="title">
+        <img class="fade-in" src="./images/logo.png" />
+        <h3 class="fade-in" id="description">
+          A Visual Studio Code extension that provides gRPC Remote Procedure
+          Call (gRPC) API endpoint testing.
+        </h3>
+      </div>
     </div>
 
     <div id="getting-started" class="container">
       <h2>Getting Started</h2>
 
-      <div class="grid shadow">
-        <h4>Installation</h4>
+      <div class="grid">
+        <h3>Installation</h3>
         <p>
           tropicRPC can be installed from the VS Code Extensions Marketplace
-          <a href="https://marketplace.visualstudio.com/items?itemName=tropicRPC.tropicrpc">here</a
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=tropicRPC.tropicrpc"
+            >here</a
           >.
         </p>
       </div>
 
+      <hr />
+
       <div class="grid">
         <img class="demo" src="./images/config-square.gif" />
         <div>
-          <h4>Setting up the config file</h4>
+          <h3>Setting up the config file</h3>
           <p>
-            Open the command palette in VS Code (Cmd/Ctrl + Shift + P) and select
-            <code>tropicRPC: Create Config File</code>. A default config file will be generated.
-            Follow the instructions in the config object to update the entry, portNumber, ipAddress,
-            protoFile, and protoPackage.
+            Open the command palette in VS Code (Cmd/Ctrl + Shift + P) and
+            select
+            <code>tropicRPC: Create Config File</code>. A default config file
+            will be generated. Follow the instructions in the config object to
+            update the entry, portNumber, ipAddress, protoFile, and
+            protoPackage.
           </p>
         </div>
       </div>
 
-      <div id="mock-api" class="grid shadow">
-        <h4>tropicRPC's mock API</h4>
-        <p>
-          A mock gRPC API was built for testing tropicRPC during development. This mock API is
-          open-sourced for users to test the tropicRPC extension. It's available in this
-          <a href="https://github.com/tropicRPC/Mock-gRPC-API">GitHub repository.</a>
-        </p>
-      </div>
+      <hr />
 
       <div class="grid">
         <div>
-          <h4>Write Your First tropicRPC gRPC Request</h4>
+          <h3>Write Your First tropicRPC gRPC Request</h3>
           <ol>
             <li>
-              Search for tropicRPC using the VS Code Command Palette (Cmd/Ctrl + Shift + P) and run
-              the <code>tropicRPC: Activate</code> command.
+              Search for tropicRPC using the VS Code Command Palette (Cmd/Ctrl +
+              Shift + P) and run the <code>tropicRPC: Activate</code> command.
             </li>
             <li>
-              In the 'request' object, set the values of the 'service', 'method', and 'message'
-              properties appropriately.
+              In the 'request' object, set the values of the 'service',
+              'method', and 'message' properties appropriately.
             </li>
             <li>
-              On every config file save, tropicRPC will send the request(s) and display your server
-              results in the output channel.
+              On every config file save, tropicRPC will send the request(s) and
+              display your server results in the output channel.
               <ul>
                 <li>
-                  For unary and server-streaming RPCs, add fields as properties on request object
+                  For unary and server-streaming RPCs, add fields as properties
+                  on request object
                 </li>
                 <li>
-                  For client-streaming and bidirectional RPCs, add each stream as an object nested
-                  under the request object
+                  For client-streaming and bidirectional RPCs, add each stream
+                  as an object nested under the request object
                 </li>
               </ul>
             </li>
@@ -95,42 +109,62 @@
         <img class="demo" src="./images/request-object-square.gif" />
       </div>
 
-      <div class="grid shadow">
-        <p>
-          When you are ready to end your session, search for tropicRPC using the VS Code Command
-          Palette (Cmd/Ctrl + Shift + P) and run the
-          <code>tropicRPC: Deactivate</code> command. Deactivating the extension will stop your
-          server.
-        </p>
-        <h4>Ending Your tropicRPC Session</h4>
-      </div>
+      <hr />
 
       <div class="grid">
-        <h4>Troubleshooting: Changing Your Server Path</h4>
+        <h3>Ending Your tropicRPC Session</h3>
         <p>
-          After initially setting your server path, any additional updates to the path will require
-          the extension to be deactivated and then reactivated for changes to take effect.
+          When you are ready to end your session, search for tropicRPC using the
+          VS Code Command Palette (Cmd/Ctrl + Shift + P) and run the
+          <code>tropicRPC: Deactivate</code> command. Deactivating the extension
+          will stop your server.
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="grid">
+        <h3>Troubleshooting: Changing Your Server Path</h3>
+        <p>
+          After initially setting your server path, any additional updates to
+          the path will require the extension to be deactivated and then
+          reactivated for changes to take effect.
         </p>
       </div>
     </div>
 
+    <div id="mock-api" class="container">
+      <h2>Mock gRPC API</h2>
+      <p>
+        A mock gRPC API was built for testing tropicRPC during development. This
+        mock API is open-sourced for users to test the tropicRPC extension. It's
+        available in this
+        <a href="https://github.com/tropicRPC/Mock-gRPC-API"
+          >GitHub repository.</a
+        >
+      </p>
+    </div>
+
     <div id="features" class="container">
       <h2>Features</h2>
-      <div class="streaming-odd grid">
-        <span class="streaming-text">Unary RPC</span>
-        <img src="./images/Unary.png" class="RPC-type-img" />
-      </div>
-      <div class="grid">
-        <img src="./images/ServerStreaming.png" class="RPC-type-img" />
-        <span class="streaming-text">Server-streaming RPC</span>
-      </div>
-      <div class="streaming-odd grid">
-        <span class="streaming-text">Client-streaming RPC</span>
-        <img src="./images/Unary.png" class="RPC-type-img" />
-      </div>
-      <div class="grid">
-        <img src="./images/BidirectionalStreaming.png" class="RPC-type-img" />
-        <span class="streaming-text">Bidirectional-streaming RPC</span>
+      <h3>Provides support for four RPC types:</h3>
+      <div class="rpc-features">
+        <div class="streaming">
+          <h4>Unary RPC</h4>
+          <img src="./images/Unary.png" class="RPC-type-img" />
+        </div>
+        <div class="streaming">
+          <h4>Server-streaming RPC</h4>
+          <img src="./images/ServerStreaming.png" class="RPC-type-img" />
+        </div>
+        <div class="streaming">
+          <h4>Client-streaming RPC</h4>
+          <img src="./images/Unary.png" class="RPC-type-img" />
+        </div>
+        <div class="streaming">
+          <h4>Bidirectional-streaming RPC</h4>
+          <img src="./images/BidirectionalStreaming.png" class="RPC-type-img" />
+        </div>
       </div>
     </div>
 
@@ -168,6 +202,7 @@
           <a href="https://github.com/ShahruKhanHub"
             ><img
               class="team"
+              l
               src="https://media-exp1.licdn.com/dms/image/C5603AQFAkbSMLjY17g/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=K9E5h1hzvFILXJJOrlO6yP7-qLwpWcByTl5UiymElaE"
             />
             <span class="name">Shahrukh Khan</span></a
@@ -186,7 +221,7 @@
     </div>
 
     <div class="footer">
-      <div>This project is licensed under the MIT License</div>
+      <div>This project is licensed under the MIT License.</div>
       <div>tropicRPC is an open source project.</div>
       <div>
         <a
