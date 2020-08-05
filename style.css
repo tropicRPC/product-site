@@ -4,16 +4,39 @@ body {
   padding: 0px;
 }
 
-#grad1 {
-  background-color: linear-gradient(
-    rgb(96, 96, 236),
-    white
-  ); /* For browsers that do not support gradients */
-}
-
 .icon {
   width: 50px;
   height: 50px;
+}
+
+.streaming-odd,
+.streaming-even {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.streaming-odd {
+  background: rgb(255, 251, 253);
+  background: radial-gradient(
+    circle,
+    rgba(255, 251, 253, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+/* 
+.streaming-even {
+} */
+
+.streaming-text {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.RPC-type-img {
+  width: 25%;
+  height: 25%;
 }
 
 .team {
