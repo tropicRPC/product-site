@@ -9,15 +9,6 @@ body {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-=======
-#grad1 {
-  background-color: linear-gradient(
-    rgb(96, 96, 236),
-    white
-  ); /* For browsers that do not support gradients */
-}
-
 #header-container {
   display: flex;
   justify-content: space-between;
@@ -33,7 +24,6 @@ body {
   font-size: 1.2em;
 }
 
->>>>>>> ce7a667a96eb24c467e3b43017dd7374dabf2079
 .icon {
   /* width: 50px; */
   height: 50px;
@@ -166,7 +156,42 @@ h4 {
 }
 
 .team {
-  width: 50px;
-  height: 50px;
-  /* border-radius: 50%; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.meet-team {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  display: block;
+  text-align: center;
+}
+
+.team-li img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 6rem;
+  font-size: 0.8rem;
+  /* text-align: center; */
+}
+
+.footer div {
+  margin-bottom: 1rem;
 }
