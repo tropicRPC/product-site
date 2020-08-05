@@ -9,15 +9,6 @@ body {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-=======
-#grad1 {
-  background-color: linear-gradient(
-    rgb(96, 96, 236),
-    white
-  ); /* For browsers that do not support gradients */
-}
-
 #header-container {
   display: flex;
   justify-content: space-between;
@@ -33,7 +24,6 @@ body {
   font-size: 1.2em;
 }
 
->>>>>>> ce7a667a96eb24c467e3b43017dd7374dabf2079
 .icon {
   /* width: 50px; */
   height: 50px;
