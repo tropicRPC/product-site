@@ -1,7 +1,12 @@
 version: '3'
 services:
   test:
-    image: rpctropic/tropic-prod
-    container_name: 'tropic-prod'
+    image: rpctropic/tropicrpc-prod
+    container_name: tropicrpc-test
     ports:
-      - '80:80'
+      - '3000:3000'
+    volumes:
+      - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+volumes:
+  node_modules:

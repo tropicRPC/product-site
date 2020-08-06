@@ -1,4 +1,7 @@
-FROM nginx:alpine
-COPY ./*.html /usr/share/nginx/html/
-COPY ./*.css /usr/share/nginx/html/
-COPY ./images/* /usr/share/nginx/html/images/
+FROM node:10.1
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN npm install
+RUN npm run build
+EXPOSE 3000
+ENTRYPOINT ["node", "./server.js"]
