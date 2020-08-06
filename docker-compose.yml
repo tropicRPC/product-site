@@ -1,7 +1,7 @@
 version: '3'
 services:
   test:
-    image: rpctropic/tropicrpc-prod
-    container_name: 'tropicrpc-prod'
+    image: rpctropic/tropic-prod
+    container_name: 'tropic-prod'
     ports:
       - '80:80'
